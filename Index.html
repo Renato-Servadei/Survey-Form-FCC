@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div id="mayor"></div>
+            <div id="mayor2"></div>
+            <div id="guion"></div>
+        </div>
+        <h1 id="title">
+            Argentina<br /> Programa
+        </h1>
+        <p id="description">Plan nacional de formación en programación</p>
+    </header>
+    <form id="survey-form">
+        <fieldset class="person">
+            <label>Nombre*<input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="inserte su nombre"
+            required
+        /></label>
+            <label>Email*<input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ponga su direccion de correo electronico"
+            required
+          /></label>
+            <label>Número de documento*<input
+            type="number"
+            id="number"
+            name="number"
+            maxlength="8"
+            placeholder="ingrese su nro. de documento sin puntos"
+            required
+          /></label>
+            <label>Lugar de Residencia<select
+            id="dropdown" name="dropdown">
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="CABA">CABA</option>
+            <option value="Catamarca">Catamarca</option>
+            <option value="Chaco">Chaco</option>
+            <option value="Chubut">Chubut</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Corrientes">Corrientes</option>
+            <option value="Entre Ríos">Entre Ríos</option>
+            <option value="Formosa">Formosa</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="La Pampa">La Pampa</option>
+            <option value="La Rioja">La Rioja</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Misiones">Misiones</option>
+            <option value="Neuquén">Neuquén</option>
+            <option value="Río Negro">Río Negro</option>
+            <option value="Salta">Salta</option>
+            <option value="San Juan">San Juan</option>
+            <option value="San Luis">San Luis</option>
+            <option value="Santa Cruz">Santa Cruz</option>
+            <option value="Santa Fe">Santa Fe</option>
+            <option value="Santiago del Estero">Santiago del Estero</option>
+            <option value="Tierra del Fuego">Tierra del Fuego</option>
+            <option value="Tucumán">Tucumán</option>
+          </select>
+          </label>
+        </fieldset>
+        <fieldset>
+            <legend>Nivel de Educación*</legend>
+            <label>Primario
+                <input
+                id="primario"
+                type="radio"
+                name="educacion"
+                value="primario"
+                checked
+                />
+            </label>
+            <label>Secundario Incompleto
+                <input
+                id="secundario incompleto"
+                type="radio"
+                name="educacion"
+                value="secundario incompleto"
+                />
+            </label>
+            <label>Secundario Completo
+                <input
+                id="secundario completo"
+                type="radio"
+                name="educacion"
+                value="secundario completo"
+                />
+            </label>
+            <label>Universitario Incompleto
+                <input
+                id="universitario incompleto"
+                type="radio"
+                name="educacion"
+                value="universitario incompleto"
+                />
+            </label>
+            <label>Universitario Completo
+                <input
+                id="universitario completo"
+                type="radio"
+                name="educacion"
+                value="universitario Completo"
+                />
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Cómo seguirías tu formación IT?</legend>
+            <label>FrontEnd
+                <input
+                id="frontend"
+                type="checkbox"
+                name="post"
+                value="frontend"
+                />
+            </label>
+            <label>BackEnd
+                <input
+                id="backend"
+                type="checkbox"
+                name="post"
+                value="backend"
+                />
+            </label>
+            <label>
+            <input
+              id="gamedev"
+              type="checkbox"
+              name="post"
+              value="gamedev"
+            />GameDev
+          </label>
+            <label for="blockchain">
+            <input
+              id="blockchain"
+              type="checkbox"
+              name="post"
+              value="blockchain"
+            />Blockchain
+          </label>
+            <label for="android">
+            <input
+              id="android"
+              type="checkbox"
+              name="post"
+              value="android"
+            />Android
+          </label>
+            <label for="devops">
+            <input
+              id="devops"
+              type="checkbox"
+              name="post"
+              value="devops"
+            />DevOps
+          </label>
+            <label for="phyton">
+            <input
+              id="phyton"
+              type="checkbox"
+              name="post"
+              value="phyton"
+            />Phyton
+          </label>
+            <label for="go">
+            <input id="go" type="checkbox" name="post" value="go" />Go
+          </label>
+            <label for="aws">
+            <input id="aws" type="checkbox" name="post" value="Aws" />Aws
+          </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <textarea name="message" rows="10" cols="30" maxlenght="300">Contanos por qué querés ingresar a Argentina Programa
+            </textarea>
+            <button type="submit" id="submit"><b>Enviar</b></button>
+            <p>* campos obligatorios</p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
